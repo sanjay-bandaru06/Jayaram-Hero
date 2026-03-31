@@ -20,12 +20,18 @@ export default function Home() {
             <span>AUTOMOBILE</span>
           </h1>
           <p className="hero-banner__address">
-            <span className="hero-banner__pin">📍</span>
+            <span className="hero-banner__pin"></span>
             Ramanayyapeta, Andhra Pradesh
           </p>
           <div className="hero-banner__actions">
             <Link to="/bikes" className="btn btn--primary">Explore Bikes</Link>
-            <Link to="/scooters" className="btn btn--outline">Explore Scooters</Link>
+            <Link
+              to="/scooters"
+              className="btn btn--outline"
+              style={{ color: 'var(--black)', borderColor: 'black' }}
+            >
+              Explore Scooters
+            </Link>
           </div>
         </div>
         <div className="hero-banner__scroll">scroll ↓</div>
