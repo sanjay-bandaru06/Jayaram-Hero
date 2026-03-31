@@ -1,0 +1,114 @@
+.vehicle-page {
+  min-height: 100vh;
+}
+
+.vehicle-page__hero {
+  position: relative;
+  padding: 160px 2rem 80px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.vehicle-page__hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 70% 70% at 50% 100%, rgba(232,0,13,0.14) 0%, transparent 70%),
+    linear-gradient(180deg, #0a0a0a 0%, #0f0f0f 100%);
+  z-index: 0;
+}
+
+.vehicle-page__hero-bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(232,0,13,0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(232,0,13,0.04) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+.vehicle-page__hero-bg--scooter {
+  background:
+    radial-gradient(ellipse 70% 70% at 30% 100%, rgba(232,0,13,0.12) 0%, transparent 70%),
+    radial-gradient(ellipse 50% 50% at 80% 10%, rgba(232,0,13,0.07) 0%, transparent 60%),
+    linear-gradient(180deg, #0a0a0a 0%, #0f0f0f 100%);
+}
+
+.vehicle-page__hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.vehicle-page__breadcrumb {
+  display: inline-block;
+  font-family: var(--font-condensed);
+  font-size: 0.75rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 1rem;
+  opacity: 0.85;
+}
+
+.vehicle-page__title {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 8vw, 6rem);
+  letter-spacing: 4px;
+  line-height: 1;
+  color: var(--white);
+  margin-bottom: 1rem;
+}
+
+.vehicle-page__title span {
+  color: var(--red);
+}
+
+.vehicle-page__desc {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  color: var(--white-muted);
+  max-width: 500px;
+  margin: 0 auto 1.5rem;
+  line-height: 1.7;
+}
+
+.vehicle-page__meta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.vehicle-page__count {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(232,0,13,0.12);
+  border: 1px solid rgba(232,0,13,0.35);
+  color: var(--red);
+  font-family: var(--font-condensed);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 50px;
+}
+
+.vehicle-page__note {
+  font-family: var(--font-condensed);
+  font-size: 0.8rem;
+  letter-spacing: 1.5px;
+  color: var(--white-muted);
+  text-transform: uppercase;
+}
+
+.vehicle-page__grid-wrap {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
