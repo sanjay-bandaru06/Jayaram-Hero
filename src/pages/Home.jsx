@@ -42,8 +42,7 @@ export default function Home() {
         {[
           { value: `${bikes.length}+`, label: 'Bike Models' },
           { value: `${scooters.length}+`, label: 'Scooter Models' },
-          { value: '10+', label: 'Years of Trust' },
-          { value: '24/7', label: 'Support' },
+          { value: '40+', label: 'Years of Trust' },
         ].map(stat => (
           <div key={stat.label} className="stats-strip__item">
             <span className="stats-strip__value">{stat.value}</span>
