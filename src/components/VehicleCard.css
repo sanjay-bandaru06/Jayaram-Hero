@@ -117,3 +117,38 @@
   transform: translateX(5px);
   color: var(--red);
 }
+
+.vehicle-card__buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.vehicle-card__buttons--bottom {
+  margin-top: 14px;
+}
+
+.vehicle-card__btn {
+  border: none;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.vehicle-card__btn:hover {
+  transform: translateY(-2px);
+  opacity: 0.9;
+}
+
+.vehicle-card__btn--amazon {
+  background: #ff9900;
+}
+
+.vehicle-card__btn--flipkart {
+  background: #2874f0;
+}
